@@ -8,4 +8,6 @@ setxkbmap -layout us -variant altgr-intl \
 
 xrdb -merge ~/.Xresources
 
+eval $(ssh-agent)
+
 exec xmonad
