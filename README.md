@@ -3,6 +3,11 @@ xinitrc
 
 My `.xinitrc` configuration.
 
-# Installation
+## Prerequisites
+
+* ssh-agent
+* xmonad
+
+## Installation
 
 `ln -s <PATH>/xinitrc <HOME>/.xinitrc`.
