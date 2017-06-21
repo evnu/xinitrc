@@ -13,6 +13,11 @@ eval $(ssh-agent)
 # Desktop notifications.
 dunst &
 
+# tray
+trayer --edge top --align right --SetDockType true \
+    --SetPartialStrut true --expand true --width 10 \
+    --transparent true --tint 0x191970 --height 12 &
+
 # Allow running additional things specific to this machine
 if [[ -f "$HOME/.xinitrc.local" ]]; then
     source $HOME/.xinitrc.local

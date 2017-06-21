@@ -8,6 +8,7 @@ My `.xinitrc` configuration.
 * ssh-agent
 * xmonad
 * [dunst](http://knopwob.org/dunst/index.html)
+* trayer
 
 ## Installation
 
