@@ -10,4 +10,9 @@ xrdb -merge ~/.Xresources
 
 eval $(ssh-agent)
 
+# Allow running additional things specific to this machine
+if [[ -f "$HOME/.xinitrc.local" ]]; then
+    source $HOME/.xinitrc.local
+fi
+
 exec xmonad
