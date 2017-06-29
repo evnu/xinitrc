@@ -8,7 +8,7 @@ setxkbmap -layout us -variant altgr-intl \
 
 xrdb -merge ~/.Xresources
 
-eval $(ssh-agent)
+eval "$(ssh-agent)"
 
 # Desktop notifications.
 dunst &
@@ -18,9 +18,13 @@ trayer --edge bottom --align right --SetDockType true \
     --SetPartialStrut true --expand true --width 10 \
     --transparent true --tint 0x191970 --height 12 &
 
+# Automatic lock after 5 minutes
+xautolock -time 5 -locker slock &
+
 # Allow running additional things specific to this machine
 if [[ -f "$HOME/.xinitrc.local" ]]; then
-    source $HOME/.xinitrc.local
+    # shellcheck disable=SC1090
+    source "$HOME/.xinitrc.local"
 fi
 
 exec xmonad

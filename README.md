@@ -9,6 +9,8 @@ My `.xinitrc` configuration.
 * xmonad
 * [dunst](http://knopwob.org/dunst/index.html)
 * trayer
+* xautolock
+* [slock](http://tools.suckless.org/slock/)
 
 ## Installation
 
