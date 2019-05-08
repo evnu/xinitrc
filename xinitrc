@@ -16,7 +16,7 @@ dunst &
 # tray
 trayer --edge bottom --align right --SetDockType true \
     --SetPartialStrut true --expand true --width 10 \
-    --transparent true --tint 0x191970 --height 12 &
+    --transparent true --tint 0x191970 --height 30 &
 
 # Automatic lock after 5 minutes
 xautolock -time 5 -locker slock &
