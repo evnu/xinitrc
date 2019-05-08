@@ -27,4 +27,6 @@ if [[ -f "$HOME/.xinitrc.local" ]]; then
     source "$HOME/.xinitrc.local"
 fi
 
+pasystray &
+
 exec xmonad
