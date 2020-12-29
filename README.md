@@ -6,7 +6,8 @@ My `.xinitrc` configuration.
 ## Prerequisites
 
 * ssh-agent
-* xmonad
+* herbstluftwm
+* dzen2
 * [dunst](http://knopwob.org/dunst/index.html)
 * trayer
 * xautolock

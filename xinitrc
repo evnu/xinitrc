@@ -28,4 +28,5 @@ if [[ -f "$HOME/.xinitrc.local" ]]; then
     source "$HOME/.xinitrc.local"
 fi
 
-exec xmonad
+# exec xmonad
+exec herbstluftwm
