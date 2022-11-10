@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Source all global xinitrc scripts as well
+for f in /etc/X11/xinit/xinitrc.d/*.sh; do
+  source "$f"
+done
+
 # see /usr/share/X11/xkb/rules/base.lst for a list of all options
 setxkbmap -layout us -variant altgr-intl \
     -option caps:escape \
