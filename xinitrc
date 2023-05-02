@@ -33,8 +33,5 @@ if [[ -f "$HOME/.xinitrc.local" ]]; then
     source "$HOME/.xinitrc.local"
 fi
 
-# No more beeps!
-xset b off
-
 # exec xmonad
 exec herbstluftwm
